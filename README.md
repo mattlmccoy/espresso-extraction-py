@@ -53,15 +53,13 @@ python espresso-extraction.py
 ### **2D Plot: Temperature vs. Extraction Yield**
 - Shows a linear trend between extraction temperature and yield.
   
-![image](https://github.com/user-attachments/assets/2cbfe2de-1baf-441b-925f-e412e11c8c03)
-
+![image](https://github.com/user-attachments/assets/731ea67e-6e43-4f65-8791-f3ab49eaf81f)
 
 ### **3D Plot: Temperature & Grind Size vs. Extraction Yield**
 - Fitted **least squares regression plane** highlights data trends.
 - **Red points** = real data, **light blue points** = interpolated.
 
 ![extraction_3D_Temperature_90-95_Grind_200-600_20250312_233608](https://github.com/user-attachments/assets/f7f11192-1e68-4d54-9692-a46c6f8eeddb)
-
 
 ---
 
