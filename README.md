@@ -113,3 +113,5 @@ Cheap refractometer: https://a.co/d/f6HQd3G
 
 ## **📌 Acknowledgments**
 This project was developed as part of a **metrology education initiative**, illustrating how precision measurement impacts everyday experiences like making coffee. ☕🔬  
+
+This work was created for the course ME 6225: Metrology at Georgia Institute of Technology in the George W. Woodruff School of Mechanical Engineering.
