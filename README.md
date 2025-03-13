@@ -63,13 +63,8 @@ python espresso-extraction.py
 
 ---
 
-## **🧑‍🔬 Scientific Basis**
+## **🧑‍🔬📖 Scientific Basis**
 This project applies **metrology principles** to espresso brewing, emphasizing the **importance of precise measurement** in achieving a **consistent and high-quality shot**.  
-
-It references scientific research such as:  
-📖 Andueza et al. (2003) on grind size and extraction yield.  
-📖 Klotz et al. (2020) on temperature's impact on taste.  
-📖 UC Davis Coffee Center studies on consumer perception.  
 
 **Reference List:**
 
