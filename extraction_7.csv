@@ -1,0 +1,2 @@
+Timestamp,Temperature (°C),Temperature Used,Pressure (bar),Pressure Used,Grind Size,Grind Size Used,Extraction Time (s),Extraction Time Used,Dry Coffee Mass (g),Beverage Mass (g),Brix,TDS,Extraction Yield (%)
+2025-03-06 17:51:04,93,False,9,False,fine,True,42.0,True,18.0,36.0,11.0,0.0935,18.7
