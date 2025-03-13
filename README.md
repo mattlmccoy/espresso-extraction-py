@@ -101,5 +101,10 @@ https://www.youtube.com/watch?v=FDcUICSV3XE
 
 ---
 
+## **🔬 Equipment**
+
+Cheap refractometer: https://a.co/d/f6HQd3G
+--> Measures in Brix (sugar content). The script converts **Brix** to **TDS** and **Extraction Yield**.
+
 ## **📌 Acknowledgments**
 This project was developed as part of a **metrology education initiative**, illustrating how precision measurement impacts everyday experiences like making coffee. ☕🔬  
