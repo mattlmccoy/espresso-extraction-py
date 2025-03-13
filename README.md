@@ -81,5 +81,11 @@ espresso-extraction-py/
 
 ---
 
+## **🎥 Video**
+A video was created to better explain and show the results from these studies and what can be done with the script.  
+https://www.youtube.com/watch?v=FDcUICSV3XE
+
+---
+
 ## **📌 Acknowledgments**
 This project was developed as part of a **metrology education initiative**, illustrating how precision measurement impacts everyday experiences like making coffee. ☕🔬  
