@@ -68,6 +68,19 @@ It references scientific research such as:
 📖 Klotz et al. (2020) on temperature's impact on taste.  
 📖 UC Davis Coffee Center studies on consumer perception.  
 
+**Reference List:**
+[1] Várady, M., Tauchen, J., Klouček, P., & Popelka, P. (2022). Effects of Total Dissolved Solids, Extraction Yield, Grinding, and Method of Preparation on Antioxidant Activity in Fermented Specialty Coffee. Fermentation, 8(8), 375. https://doi.org/10.3390/fermentation8080375
+
+[2] Andueza, S.F., Vila, M.A., Peña, M.P., & Cid, C. (2007). Influence of coffee/water ratio on the final quality of espresso coffee. Journal of the Science of Food and Agriculture, 87, 586-592.
+
+[3] Batali, M. E., Cotter, A. R., Frost, S. C., Ristenpart, W. D., & Guinard, J.-X. (2021). Titratable Acidity, Perceived Sourness, and Liking of Acidity in Drip Brewed Coffee. ACS Food Science & Technology, 1(4), 559–569. https://doi.org/10.1021/acsfoodscitech.0c00078
+
+[4] Klotz, J. A., Winkler, G., & Lachenmeier, D. W. (2020). Influence of the Brewing Temperature on the Taste of Espresso. Foods (Basel, Switzerland), 9(1), 36. https://doi.org/10.3390/foods9010036
+
+[5] Andueza, S., De Peña, M. P., & Cid, C. (2003). Chemical and sensorial characteristics of espresso coffee as affected by grinding and torrefacto roast. Journal of Agricultural and Food Chemistry, 51(24), 7034–7039. https://doi.org/10.1021/jf034628f
+
+[6] Liu, X., Tang, Y., & Wang, Y. (2022). Consumer Satisfaction for Starbucks. Proceedings of the 2022 7th International Conference on Social Sciences and Economic Development (ICSSED 2022), 1475–1482. https://doi.org/10.2991/aebmr.k.220405.247
+
 ---
 
 ## **📂 Repository Structure**
