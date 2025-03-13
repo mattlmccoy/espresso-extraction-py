@@ -69,6 +69,7 @@ It references scientific research such as:
 📖 UC Davis Coffee Center studies on consumer perception.  
 
 **Reference List:**
+
 [1] Várady, M., Tauchen, J., Klouček, P., & Popelka, P. (2022). Effects of Total Dissolved Solids, Extraction Yield, Grinding, and Method of Preparation on Antioxidant Activity in Fermented Specialty Coffee. Fermentation, 8(8), 375. https://doi.org/10.3390/fermentation8080375
 
 [2] Andueza, S.F., Vila, M.A., Peña, M.P., & Cid, C. (2007). Influence of coffee/water ratio on the final quality of espresso coffee. Journal of the Science of Food and Agriculture, 87, 586-592.
