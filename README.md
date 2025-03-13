@@ -63,7 +63,7 @@ python espresso-extraction.py
 
 ---
 
-## **🧑‍🔬📖 Scientific Basis**
+## **📖 Scientific Basis**
 This project applies **metrology principles** to espresso brewing, emphasizing the **importance of precise measurement** in achieving a **consistent and high-quality shot**.  
 
 **Reference List:**
