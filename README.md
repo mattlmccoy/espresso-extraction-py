@@ -8,44 +8,122 @@ This repository contains Python scripts designed to **collect, analyze, and visu
 ---
 
 ## **📜 Features**
-- **Data Collection:**  
-  - Users input experimental parameters such as **temperature, pressure, grind size, extraction time, and Brix value**.
-  - Automatically calculates **Total Dissolved Solids (TDS)** and **extraction yield**.
-  - Saves data in structured CSV format under `extraction_data/`.
 
-- **2D Data Visualization:**  
-  - Plots **extraction yield vs. various parameters**.
-  - Includes **uncertainty analysis** with **error bars**.
-  - Linear regression applied to show data trends.
+### **Data Collection**
+- Interactive data input with **smart defaults** and **validation**
+- Automatically calculates **Total Dissolved Solids (TDS)** and **extraction yield**
+- Real-time feedback on calculated values
+- Saves data in structured CSV format under `extraction_data/`
+- Input validation to prevent errors
 
-- **3D Data Visualization:**  
-  - Plots **extraction yield vs. two selected parameters**.
-  - Fits a **trend plane using least squares regression**.
-  - Shows **real data points (red)** and **interpolated trend points (light blue)**.
+### **2D Data Visualization**
+- Plots **extraction yield vs. various parameters**
+- **Linear regression** with trend line visualization
+- **Statistical metrics**: R² (coefficient of determination) and RMSE (root mean squared error)
+- Enhanced plot styling with better readability
+- High-resolution figure export (600 DPI)
+
+### **3D Data Visualization**
+- Plots **extraction yield vs. two selected parameters**
+- **Multiple linear regression** to fit a trend plane
+- **Statistical metrics**: R² and RMSE for plane fit quality
+- Interactive 3D visualization with optimized viewing angle
+- **Real data points (red)** and **interpolated trend points (light blue)**
+
+### **New in v2.0**
+- **Command-line interface** with argparse support
+- **Configuration file** (`config.json`) for customizable defaults
+- **Type hints** throughout the codebase for better IDE support
+- **Comprehensive error handling** and input validation
+- **Enhanced documentation** with detailed docstrings
+- **Modern Python packaging** with `setup.py` and `requirements.txt`
+- **Statistical analysis** with R² and RMSE calculations
+- **Improved user experience** with better formatting and feedback
 
 ---
 
 ## **📥 Installation**
-### **Requirements**
-Ensure you have **Python 3.x** installed and install the required dependencies using:
 
+### **Requirements**
+- **Python 3.8+** (recommended: Python 3.10 or higher)
+- pip package manager
+
+### **Quick Install**
 ```bash
-pip install numpy pandas matplotlib scipy
+# Clone the repository
+git clone https://github.com/mattlmccoy/espresso-extraction-py.git
+cd espresso-extraction-py
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Or install as a package
+pip install -e .
 ```
+
+### **Dependencies**
+- `numpy` >= 1.24.0 - Numerical computing
+- `pandas` >= 2.0.0 - Data manipulation
+- `matplotlib` >= 3.7.0 - Visualization
+- `scipy` >= 1.10.0 - Scientific computing
+- `scikit-learn` >= 1.3.0 - Statistical metrics
 
 ---
 
 ## **🚀 Usage**
-Run the main script to start data collection or visualization:
+
+### **Interactive Mode**
+Run the script without arguments to use the interactive menu:
 
 ```bash
-python espresso-extraction.py
+python espresso_extraction.py
+```
+
+### **Command-Line Interface**
+Use command-line arguments for quick access to specific features:
+
+```bash
+# Collect data directly
+python espresso_extraction.py --collect
+
+# Create 2D visualization
+python espresso_extraction.py --plot-2d
+
+# Create 3D visualization
+python espresso_extraction.py --plot-3d
+
+# Use custom data directory
+python espresso_extraction.py --data-dir /path/to/data --plot-2d
+
+# Show help
+python espresso_extraction.py --help
 ```
 
 ### **Menu Options**
-1️⃣ **Collect Data** → Input experimental parameters and save data.  
-2️⃣ **Visualize 2D Plot** → Select a variable and plot extraction yield.  
-3️⃣ **Visualize 3D Plot** → Generate a 3D regression plane for deeper analysis.  
+1. **Collect Data** → Input experimental parameters and save data
+2. **Visualize 2D Plot** → Select a variable and plot extraction yield with regression
+3. **Visualize 3D Plot** → Generate a 3D regression plane for deeper analysis
+4. **Exit** → Close the program
+
+### **Configuration**
+Customize default values by editing `config.json`:
+
+```json
+{
+  "defaults": {
+    "temperature_celsius": 93,
+    "pressure_bar": 9,
+    "grind_size": "medium",
+    "extraction_time_seconds": 25
+  },
+  "grind_size_mapping": {
+    "fine": 200,
+    "medium": 400,
+    "coarse": 600
+  },
+  "brix_to_tds_factor": 0.85
+}
+```  
 
 ---
 
@@ -85,11 +163,41 @@ This project applies **metrology principles** to espresso brewing, emphasizing t
 ## **📂 Repository Structure**
 ```
 espresso-extraction-py/
-│── sample-data/            # Stores collected data (CSV)
-  │── figures/              # Saved plots
-│── espresso_extraction.py  # Entry point for script
-│── README.md               # This document
+├── espresso_extraction.py  # Main script with data collection & visualization
+├── config.json             # Configuration file for defaults
+├── requirements.txt        # Python dependencies
+├── setup.py                # Package setup configuration
+├── .gitignore              # Git ignore rules
+├── README.md               # This document
+├── sample-data/            # Example collected data (CSV files)
+│   └── figures/            # Saved visualization plots
+└── extraction_data/        # User-generated data (created at runtime)
+    └── figures/            # User-generated plots
 ```
+
+## **🆕 What's New in v2.0**
+
+### **Code Quality Improvements**
+- ✅ Added comprehensive **type hints** for better IDE support
+- ✅ Improved **docstrings** with detailed parameter descriptions
+- ✅ Enhanced **error handling** with try-except blocks
+- ✅ Removed **unused imports** (scipy.interpolate.griddata)
+- ✅ Fixed **CSV header order** to match data collection sequence
+
+### **Feature Enhancements**
+- ✅ **Command-line arguments** support (--collect, --plot-2d, --plot-3d)
+- ✅ **Configuration file** (config.json) for customizable defaults
+- ✅ **Input validation** with positive value checks and range validation
+- ✅ **Statistical metrics**: R² and RMSE displayed on all plots
+- ✅ **Better visualization** with improved colors, labels, and layout
+- ✅ **User feedback** showing calculated TDS and extraction yield
+
+### **Developer Experience**
+- ✅ Modern **packaging** with setup.py and requirements.txt
+- ✅ Comprehensive **.gitignore** for Python projects
+- ✅ **Structured configuration** with JSON support
+- ✅ **Better error messages** and user guidance
+- ✅ **Keyboard interrupt handling** for graceful exits
 
 ---
 
