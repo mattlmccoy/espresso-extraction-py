@@ -134,5 +134,11 @@ dmypy.json
 
 # Project-specific
 extraction_data/
+test_outputs/
+test_features.py
 *.csv
 *.png
+*.xlsx
+*.json
+!config.json
+!sample-data/**
